@@ -1,0 +1,19 @@
+all types=
+decompressed 4
+untouched 1
+
+recursive=
+decompressed 5
+untouched 1
+
+single file=
+decompressed 1
+untouched 0
+
+test_folder
+decompressed 2
+untouched 0
+
+wildcard
+decompressed 2
+untouched 2

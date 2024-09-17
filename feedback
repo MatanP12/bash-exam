@@ -1,0 +1,59 @@
+Develeap Bash Exam Feedback
+Hi X,
+Thank you for sending your solutions for our Bash exam.
+A feedback and a final result is below. 
+("+" is good points, "-" is points for improvement)
+unpack task
+[feed back points]
+psping task 
+[feed back points]
+Overall score: X
+Congrats!
+Our team will be in touch with you soon.
+Regards,
+Idan
+______________________________________
+I recommend you to go over the instructions and feedback and correct the script. (No need to send us a solution) It will help you become more prepared for the bootcamp.
++ Code handles all file types well.
++ Recursion works.
++ Verbose works.
+- Verbose without -v flag
++ Readable code.
++ Understanding of data streams. (>, /dev/null, |)
++ Provided a help/usage output.
+- As a tip I suggest adding Help/Usage output
+
++ Handles some errors.
+- If a directory is provided and -r is not specified, the script should unpack the files within that directory (one level deep). You can see it in the examples given in the instructions.
++ Short script.
+- Long script.
++ Usage of getopts.
+- Better to use getopts to handle flags.
++ Usage of indentation.
+- Indentation needs improvement.
++ DRY code (Don't Repeat Yourself)
++ Using regex (=~).
++ Using bash string manipulation.
+- Some of the code repeats itself - this is not optimal. I recommend reading about WET vs DRY code.
+- The instructions requires to handle `uncompress` option.
++ Usage of case.
+- Using 'case' could have been better than using multiple "If" statements
++ Usage of `find` command for recursion.
+- Could use `find` command for recursion.
+- Usage of cd - I recommennd using pushd/popd to move between directories in scripts.
++ Usage of awk and sed.
+- No usage of awk and sed.
+- File type is determined via file extension. This is incorrect. It should be determined by using the command `file`.
++ Understanding of exit code ( $? ).
+- Please note the script doesn't handle relative paths.
+- Though `globstar` is a good way to handle files in a directory, better to use `find` for recursion.
+- Recursion is triggered on each run, even if the `-r` was not provided.
+- Verbose is triggered on each run, even if the `-v` was not provided.
+- There is no verbose flag handling.
+- The script does not return the number of files that were not decompressed.
+- The script should suppress terminal output from decompression commands.
++ The script is well documented.
+- The `zip` file is extracted to the working directory instead of its relative path.
+- The script does not handle `compressed` and `gzip` files without extensions.
+
+~ Note: Please remove unnecessary code from the script before submitting.
